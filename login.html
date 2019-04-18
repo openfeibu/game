@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta content="telephone=no" name="format-detection" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- UC禁止放大字体 -->
+  <meta name="wap-font-scale" content="no">
+
+	<title>兒童問題行為應對課程 </title>
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <link rel="apple-touch-icon-precomposed" href="./icon.png" />
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/pxloader-images.min.js"></script>
+    <!-- wx -->
+  <!-- <script type="text/javascript" src="../js/jweixin-1.2.0.js"></script> -->
+
+</head>
+
+<body  class="g2Bg">
+  <section id="main">
+      <div class="login-form">
+        <form action="">
+            <div class="login-input fb-clearfix">
+                <label for=""><img src="images/en/zh.png" width="100%" alt=""></label>
+                <div class="login-input-c">
+                    <img src="images/mmp.png" width="100%" alt="">
+                   <input type="text" >
+                </div>
+               
+            </div>
+            <div class="login-input fb-clearfix">
+              <label for=""><img src="images/en/mm.png" width="100%" alt=""></label>
+              <div class="login-input-c">
+                  <img src="images/mmp.png" width="100%" alt="">
+                 <input type="password" >
+              </div>
+            </div>  
+            <div class="login-btn fb-clearfix">
+              <div class="forgetPass btn"><img src="images/en/wjmm.png" width="100%" alt=""></div>
+              <div class="login-submit btn">
+                  <img src="images/en/dl.png" width="100%" alt="">
+                <button type="submit">登錄</button>
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="question-power">
+          <div class="question-return bbtn" onclick="window.history.go(-1)"><img src="images/return.png" alt=""></div>
+          
+        </div>
+  </section>
+  <!-- <audio id="audioPlay" src="button.mp3" preload ></audio> -->
+</body>
+<script>
+  $(function(){
+   $(".forgetPass").on("click",function(){
+     fbAlert("請聯係管理員")
+   })
+  })
+</script>
+</html>

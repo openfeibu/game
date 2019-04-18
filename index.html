@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta content="telephone=no" name="format-detection" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- UC禁止放大字体 -->
+  <meta name="wap-font-scale" content="no">
+
+	<title>兒童問題行為應對課程 </title>
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <link rel="apple-touch-icon-precomposed" href="./icon.png" />
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/pxloader-images.min.js"></script>
+    <!-- wx -->
+  <!-- <script type="text/javascript" src="../js/jweixin-1.2.0.js"></script> -->
+
+</head>
+
+<body  class="g2Bg" >
+  <section id="main">
+      <div class="loginBtn btn" style="width: 13.7%"><a href="login.html"><img src="images/login-a.png" width="100%" alt=""></a></div>
+      <div class="index-btn">
+        <div class="lau-box fb-clearfix" style="width: 17.7%">
+          <div class="lau-cn btn " style="width: 49%">
+            <img src="images/cn.png" width="100%"  alt="">
+          </div>
+          <div class="lau-en btn active2"style="width: 49%">
+              <img src="images/eno.png" width="100%"  alt="">
+          </div>
+        </div>
+        <div class="start btn" style="width: 17.7%"> 
+          <a href="checkpoint.html" ><img src="images/start.png" width="100%" alt=""></a> 
+        </div>
+        <div class="guanka btn" style="width: 17.7%">
+          <a href="checkpoint.html"><img src="images/choose.png" width="100%" alt=""></a> 
+        </div>  
+      </div>
+  </section>
+  <audio id="audioPlay" src="button.mp3" preload ></audio>
+</body>
+<script>
+  $(function(){
+ 
+
+    $(".lau-cn").on("click",function(){
+      if($(this).hasClass("active2")){
+        $(this).removeClass("active2").find("img").attr("src","images/cn.png");
+      
+      }
+      $(".lau-en").addClass("active2").find("img").attr("src","images/eno.png");
+   
+      $(".loginBtn").find("img").attr("src","images/login-a.png")
+      $(".start ").find("img").attr("src","images/start.png")
+      $(".guanka").find("img").attr("src","images/choose.png")
+    })
+    $(".lau-en").on("click",function(){
+      if($(this).hasClass("active2")){
+        $(this).removeClass("active2").find("img").attr("src","images/en.png");;
+      }
+      $(".lau-cn").addClass("active2").find("img").attr("src","images/cno.png");;
+      $(".loginBtn").find("img").attr("src","images/login-b.png")
+      $(".start ").find("img").attr("src","images/start-b.png")
+      $(".guanka").find("img").attr("src","images/choose-b.png")
+
+
+    })
+  })
+</script>
+</html>
