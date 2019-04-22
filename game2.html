@@ -153,6 +153,8 @@
         </div>
       </div>
       <div id="g2-park7">
+          <div class="jump bbtn" style="width: 13.7%"><img src="images/jump.png" alt=""></div>
+
           <div id="video_box-park7" >
             <video id="g2-park7-video" class="video" style="object-fit:fill;"  width="100%" htyle="object-fit:fill;"  width="100%" height="100%"  preload="auto" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" airplay="allow"  x5-video-orientation="portrait" x5-video-player-type="h5" x5-video-player-fullscreen="true" src="video/g2-park6.mp4"></video>
           </div>
@@ -457,6 +459,12 @@
           })
         videoElem3.removeEventListener("canplaythrough",cacheFun3);
     }
+    $("#g2-park7 .jump").on("click",function(){
+      videoElem3.pause();
+      videoElem3.currentTime = 0;
+      g2Park7Out();
+         g2Park8In();
+    })
      //第六步 e
       //第七步 s
     $("#g2-park8 .question-last").on("click",function(){
